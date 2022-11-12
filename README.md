@@ -23,6 +23,12 @@ or what is appropriate for what you chose
 ## backend
 
 a python dev environment. just replace src files with your own files
+remember to create a dot env file. simply copying the example provided will work with the example provided
+
+``` 
+flask run --host 0.0.0.0
+
+```
 
 ### Pause and Branch
 
