@@ -14,6 +14,8 @@ v0.0.0-alpha
  then
 
 ``` 
+npm run dev -- --host 
+or
 npm run dev -- --host --port 3000
 
 ```
@@ -22,13 +24,14 @@ or what is appropriate for what you chose
 
 ## backend
 
-a python dev environment. just replace src files with your own files
+a PHP-apache image with extras for Laravel and most other php projects
+
 
 ### Pause and Branch
 
 This should do it for the main branch for now.
 
-basic scaffolding in place for a Python app/webapp development
+basic scaffolding in place for a Laravel app/webapp development
 
 basic scaffolding for a js front end development
 

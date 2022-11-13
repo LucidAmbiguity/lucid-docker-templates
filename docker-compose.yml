@@ -22,8 +22,8 @@ services:
       - ./frontend/src:/project/frontend:cached
       - /project/frontend/node_modules/
     ports:
-      - 3000:3000
-      # - 5173:5173  # for VITE
+      #   - 3000:3000
+      - 5173:5173 # for VITE
     command: sleep infinity
 
   db:
@@ -36,9 +36,7 @@ services:
       POSTGRES_DB: postgres
       POSTGRES_PASSWORD: postgres
     ports:
-      - 5000:5000
-    # Add "forwardPorts": ["5432"] to **devcontainer.json** to forward PostgreSQL locally.
-    # (Adding the "ports" property to this file will not forward from a Codespace.)
+      - 8000:8000
 
   adminer:
     image: adminer
