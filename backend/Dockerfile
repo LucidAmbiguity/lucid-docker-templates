@@ -3,7 +3,7 @@ FROM php:8.0-apache-bullseye
 
 # Install MariaDB client
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-  && apt-get install -y mariadb-client  libpq-dev \
+  && apt-get install -y mariadb-client  libpq-dev git zip unzip \
   && apt-get clean -y \
   && rm -rf /var/lib/apt/lists/*
 
